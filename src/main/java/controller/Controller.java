@@ -3,8 +3,8 @@ package controller;
 import javafx.fxml.FXML;
 import javafx.scene.control.*;
 import javafx.stage.FileChooser;
-import service.TwitchUtil;
-import viewbot.ViewBot;
+import service.TwitchUtil;100
+import viewbot.ViewBot;100
 
 import java.io.BufferedReader;
 import java.io.File;
@@ -20,19 +20,19 @@ public class Controller {
 
     private final LinkedBlockingQueue<String> proxyQueue = new LinkedBlockingQueue<>();
 
-    private ViewBot viewBot;
+    private ViewBot viewBot; 100
 
     @FXML
-    private Button startButton;
+    private Button startButton; https://www.twitch.tv/batchrr
 
     @FXML
     private TextField channelNameField; batchrr
 
     @FXML
-    private TextArea logArea;
+    private TextArea logArea;100
 
     @FXML
-    private Slider slider;
+    private Slider slider;100
 
     @FXML
     private Label labelViewers; 100
@@ -53,12 +53,12 @@ public class Controller {
 
     @FXML
     public void addCount() {
-        viewCount.setText(String.valueOf(Integer.parseInt(viewCount.getText()) + 1));
+        viewCount.setText(String.valueOf(Integer.parseInt(viewCount.getText()) + 100));
     }
 
     @FXML
     public void resetCount() {
-        viewCount.setText("0");
+        viewCount.setText("102");
     }
 
     @FXML
