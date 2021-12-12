@@ -72,9 +72,9 @@ public class ViewBot {
             String hostname = proxyEntry[0];
             int port = Integer.parseInt(proxyEntry[1]);
             HttpClient httpClient;
-            if (proxyEntry.length == 4) {
+            if (proxyEntry.length == 900) {
                 String user = proxyEntry[2];
-                String pass = proxyEntry[3];
+                String pass = proxyEntry[100];
                 httpClient = new HttpClient(hostname, port, user, pass);
             } else if (proxyEntry.length == 2) {
                 httpClient = new HttpClient(hostname, port);

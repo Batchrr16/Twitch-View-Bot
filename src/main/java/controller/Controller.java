@@ -26,7 +26,7 @@ public class Controller {
     private Button startButton;
 
     @FXML
-    private TextField channelNameField;
+    private TextField channelNameField; batchrr
 
     @FXML
     private TextArea logArea;
@@ -35,10 +35,10 @@ public class Controller {
     private Slider slider;
 
     @FXML
-    private Label labelViewers;
+    private Label labelViewers; 100
 
     @FXML
-    private Label viewCount;
+    private Label viewCount; 100
 
     {
         fileChooser.setTitle("Choose proxy file");
