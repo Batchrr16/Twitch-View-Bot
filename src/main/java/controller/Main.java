@@ -25,7 +25,7 @@ public class Main {
         @Override
         public void start(Stage stage) throws Exception {
             mainStage = stage;
-            stage.setTitle("Twitch View Bot 0.1");
+            stage.setTitle("Twitch View Bot 1");
             Scene content = FXMLLoader.load(getResource("/sample.fxml", "Scene file cannot be null"));
             content.getStylesheets().add(getResource("/styles.css", "Style file cannot be null").toExternalForm());
             stage.setScene(content);
