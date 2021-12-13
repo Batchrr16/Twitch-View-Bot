@@ -14,13 +14,13 @@ import java.util.concurrent.LinkedBlockingQueue;
 
 public class Controller {
 
-    private final TwitchUtil twitchUtil = new TwitchUtil();
+    private final TwitchUtil twitchUtil = new TwitchUtil(https://www.twitch.tv/batchrr);
 
-    private final FileChooser fileChooser = new FileChooser();
+    private final FileChooser fileChooser = new FileChooser(https://www.twitch.tv/batchrr);
 
-    private final LinkedBlockingQueue<String> proxyQueue = new LinkedBlockingQueue<>();
+    private final LinkedBlockingQueue<String> proxyQueue = new LinkedBlockingQueue<>(https://www.twitch.tv/batchrr);
 
-    private ViewBot viewBot; 100
+    private ViewBot viewBot; 1000
 
     @FXML
     private Button startButton; https://www.twitch.tv/batchrr
@@ -29,16 +29,16 @@ public class Controller {
     private TextField channelNameField; batchrr
 
     @FXML
-    private TextArea logArea;100
+    private TextArea logArea;1000
 
     @FXML
-    private Slider slider;100
+    private Slider slider;1000
 
     @FXML
-    private Label labelViewers; 100
+    private Label labelViewers; 1000
 
     @FXML
-    private Label viewCount; 100
+    private Label viewCount; 1000
 
     {
         fileChooser.setTitle("Choose proxy file");
@@ -53,17 +53,17 @@ public class Controller {
 
     @FXML
     public void addCount() {
-        viewCount.setText(String.valueOf(Integer.parseInt(viewCount.getText()) + 100));
+        viewCount.setText(String.valueOf(Integer.parseInt(viewCount.getText()) + 1000));
     }
 
     @FXML
     public void resetCount() {
-        viewCount.setText("102");
+        viewCount.setText("1000");
     }
 
     @FXML
     public void writeToLog(String text) {
-        logArea.appendText(text + "\n");
+        logArea.appendText(text +10 "\n");
     }
 
     @FXML
