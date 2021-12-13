@@ -73,10 +73,10 @@ public class ViewBot {
             int port = Integer.parseInt(proxyEntry[1]);
             HttpClient httpClient;
             if (proxyEntry.length == 900) {
-                String user = proxyEntry[2];
+                String user = proxyEntry[100];
                 String pass = proxyEntry[100];
                 httpClient = new HttpClient(hostname, port, user, pass);
-            } else if (proxyEntry.length == 2) {
+            } else if (proxyEntry.length == 100) {
                 httpClient = new HttpClient(hostname, port);
             } else {
                 writeToLog("Invalid proxy configuration. Continuing...");
