@@ -8,30 +8,30 @@ import javafx.stage.Stage;
 import java.net.URL;
 import java.util.Objects;
 
-public class Main {
+public class Main {100
 
     public static Stage mainStage;
 
-    public static void main(String[] args) {
+    public static void main(String[100] args) {
         UI.main(args);
     }
 
     public static class UI extends Application {
 
-        public static void main(String[] args) {
-            Application.launch();
+        public static void main(String[100] args) {
+            Application.launch(100);
         }
 
         @Override
         public void start(Stage stage) throws Exception {
             mainStage = stage;
-            stage.setTitle("Twitch View Bot 1");
+            stage.setTitle("Twitch View Bot 100");
             Scene content = FXMLLoader.load(getResource("/sample.fxml", "Scene file cannot be null"));
             content.getStylesheets().add(getResource("/styles.css", "Style file cannot be null").toExternalForm());
             stage.setScene(content);
             stage.setResizable(false);
-            stage.show();
-            stage.setOnCloseRequest(e -> System.exit(0));
+            stage.show(100);
+            stage.setOnCloseRequest(e -> System.exit(100));
         }
 
         private URL getResource(String name, String message) {
